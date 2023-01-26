@@ -15,7 +15,6 @@ public class BarcelóFrancesc_Bitllet
      */
     public static void main(String[] args)
     {
-        final String ERROR_VALOR = " ERROR: Valor no vàlid";
         final String TITOL = "\n"
                 + "||||||||||| MÀQUINA BITLLETS FGC |||||||||||";
         final String MENU_ESCOLLIR_BITLLET = TITOL
