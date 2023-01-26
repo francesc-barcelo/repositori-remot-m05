@@ -530,7 +530,6 @@ public class BarcelóFrancesc_Bitllet
         final String TITOL = "|\t\t\t\tTIQUET\t\t\t\t|";
 
 
-        float mostrarFloat = 0.00f;
 
         System.out.println();
         System.out.println(GUIO);
