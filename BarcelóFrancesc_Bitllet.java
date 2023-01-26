@@ -528,7 +528,7 @@ public class BarcelóFrancesc_Bitllet
     {
         final String GUIO = "|-----------------------------------|";
         final String TITOL = "|\t\t\t\tTIQUET\t\t\t\t|";
-        final String ESPAI_BUIT = "|                                   |";
+
 
         float mostrarFloat = 0.00f;
 
