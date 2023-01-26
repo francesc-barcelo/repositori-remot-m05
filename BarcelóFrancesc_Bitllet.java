@@ -265,7 +265,7 @@ public class BarcelóFrancesc_Bitllet
      */
     public static float calcularPreuZona(final float PREU_2_ZONES, final float PREU_3_ZONES, int numZona, float preuBitllet, float preuBitlletZona)
     {
-        preuBitlletZona = 0.00f;
+
 
         if (numZona == 2)
         {
@@ -530,6 +530,7 @@ public class BarcelóFrancesc_Bitllet
         final String TITOL = "|\t\t\t\tTIQUET\t\t\t\t|";
 
 
+        float mostrarFloat = 0.00f;
 
         System.out.println();
         System.out.println(GUIO);
