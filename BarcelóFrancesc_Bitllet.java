@@ -103,7 +103,7 @@ public class BarcelóFrancesc_Bitllet
 
         final String ERROR = " ERROR: Opció de menú no vàlida";
 
-        boolean controlErrors = false;
+        boolean controlErrors;
 
         do
         {
@@ -152,7 +152,7 @@ public class BarcelóFrancesc_Bitllet
      */
     public static float accionsPrincipals(String[][] numBitlletsComprats, final float PREU_2_ZONES, final float PREU_3_ZONES, final String SEPARADOR, int numZona, float preuBitllet, float preuFinal, float preuBitlletZona, String seguirComprant, String tipusBitllet)
     {
-        float mostrarPreuFinal = 0.00f;
+        float mostrarPreuFinal;
 
         numZona = demanarZona(numZona, 1, 3);
 
@@ -220,7 +220,7 @@ public class BarcelóFrancesc_Bitllet
 
         String ERROR = " ERROR: zona no vàlida";
 
-        boolean controlErrors = false;
+        boolean controlErrors;
 
         do
         {
@@ -263,8 +263,6 @@ public class BarcelóFrancesc_Bitllet
      */
     public static float calcularPreuZona(final float PREU_2_ZONES, final float PREU_3_ZONES, int numZona, float preuBitllet, float preuBitlletZona)
     {
-        preuBitlletZona = 0.00f;
-
         if (numZona == 2)
         {
             preuBitlletZona = preuBitllet * PREU_2_ZONES;
@@ -316,7 +314,7 @@ public class BarcelóFrancesc_Bitllet
      */
     public static void mostrarBitllet(String[][] numBitlletsComprats)
     {
-        float mostrarPreuBitllet = 0.00f;
+        float mostrarPreuBitllet;
 
         for (int i = 0; i < numBitlletsComprats.length; i++)
         {
@@ -526,9 +524,7 @@ public class BarcelóFrancesc_Bitllet
     {
         final String GUIO = "|-----------------------------------|";
         final String TITOL = "|\t\t\t\tTIQUET\t\t\t\t|";
-        final String ESPAI_BUIT = "|                                   |";
-
-        float mostrarFloat = 0.00f;
+        float mostrarFloat;
 
         System.out.println();
         System.out.println(GUIO);
