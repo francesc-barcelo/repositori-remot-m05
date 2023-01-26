@@ -1,21 +1,13 @@
 import java.util.Objects;
 import java.util.Scanner;
 
+// Modificació 1
+// Modificació 2
+
 public class BarcelóFrancesc_Bitllet
 {
-    /**
-     * -- MAIN --
-     * En aquesta part del programa podem trobar les declaracions de variables final i la de les variables
-     * del programa en si. També tenim un do-while on es crida el mètode llegirOpcioMenuPrincipal.
-     * Dintre del switch-case hi ha codi especific segons l'opció del menú escollida, segons cada opció de
-     * switch-case s'assigna un preu i un nom de bitllet a les variables preuBitllet i tipusBitllet.
-     * Si l'opció del menú és igual a 4321 la màquina s'apaga.
-     *
-     * @author Francesc Barceló Castellet
-     */
     public static void main(String[] args)
     {
-        final String ERROR_VALOR = " ERROR: Valor no vàlid";
         final String TITOL = "\n"
                 + "||||||||||| MÀQUINA BITLLETS FGC |||||||||||";
         final String MENU_ESCOLLIR_BITLLET = TITOL
@@ -37,7 +29,6 @@ public class BarcelóFrancesc_Bitllet
         String[][] numBitlletsComprats = new String[3][3];
 
         String tipusBitllet, seguirComprant = null;
-        boolean programa = true;
         int opcioMenuPrincipal = 0, numZona = 0;
         float preuFinal = 0.00f, preuBitllet = 0.00f, preuBitlletZona = 0.00f;
 
@@ -105,7 +96,7 @@ public class BarcelóFrancesc_Bitllet
 
         final String ERROR = " ERROR: Opció de menú no vàlida";
 
-        boolean controlErrors = false;
+        boolean controlErrors;
 
         do
         {
@@ -154,7 +145,7 @@ public class BarcelóFrancesc_Bitllet
      */
     public static float accionsPrincipals(String[][] numBitlletsComprats, final float PREU_2_ZONES, final float PREU_3_ZONES, final String SEPARADOR, int numZona, float preuBitllet, float preuFinal, float preuBitlletZona, String seguirComprant, String tipusBitllet)
     {
-        float mostrarPreuFinal = 0.00f;
+        float mostrarPreuFinal;
 
         numZona = demanarZona(numZona, 1, 3);
 
@@ -222,7 +213,7 @@ public class BarcelóFrancesc_Bitllet
 
         String ERROR = " ERROR: zona no vàlida";
 
-        boolean controlErrors = false;
+        boolean controlErrors;
 
         do
         {
@@ -265,7 +256,6 @@ public class BarcelóFrancesc_Bitllet
      */
     public static float calcularPreuZona(final float PREU_2_ZONES, final float PREU_3_ZONES, int numZona, float preuBitllet, float preuBitlletZona)
     {
-
 
         if (numZona == 2)
         {
@@ -318,7 +308,7 @@ public class BarcelóFrancesc_Bitllet
      */
     public static void mostrarBitllet(String[][] numBitlletsComprats)
     {
-        float mostrarPreuBitllet = 0.00f;
+        float mostrarPreuBitllet;
 
         for (int i = 0; i < numBitlletsComprats.length; i++)
         {
@@ -528,9 +518,6 @@ public class BarcelóFrancesc_Bitllet
     {
         final String GUIO = "|-----------------------------------|";
         final String TITOL = "|\t\t\t\tTIQUET\t\t\t\t|";
-
-
-        float mostrarFloat = 0.00f;
 
         System.out.println();
         System.out.println(GUIO);
