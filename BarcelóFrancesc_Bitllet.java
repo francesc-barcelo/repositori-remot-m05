@@ -1,18 +1,11 @@
 import java.util.Objects;
 import java.util.Scanner;
 
+// Modificació 1
+// Modificació 2
+
 public class BarcelóFrancesc_Bitllet
 {
-    /**
-     * -- MAIN --
-     * En aquesta part del programa podem trobar les declaracions de variables final i la de les variables
-     * del programa en si. També tenim un do-while on es crida el mètode llegirOpcioMenuPrincipal.
-     * Dintre del switch-case hi ha codi especific segons l'opció del menú escollida, segons cada opció de
-     * switch-case s'assigna un preu i un nom de bitllet a les variables preuBitllet i tipusBitllet.
-     * Si l'opció del menú és igual a 4321 la màquina s'apaga.
-     *
-     * @author Francesc Barceló Castellet
-     */
     public static void main(String[] args)
     {
         final String TITOL = "\n"
