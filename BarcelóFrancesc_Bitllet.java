@@ -36,7 +36,6 @@ public class BarcelóFrancesc_Bitllet
         String[][] numBitlletsComprats = new String[3][3];
 
         String tipusBitllet, seguirComprant = null;
-        boolean programa = true;
         int opcioMenuPrincipal = 0, numZona = 0;
         float preuFinal = 0.00f, preuBitllet = 0.00f, preuBitlletZona = 0.00f;
 
