@@ -2,6 +2,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 // Modificació 1
+// Modificació 2
 
 public class BarcelóFrancesc_Bitllet
 {
